@@ -173,10 +173,10 @@
     ]
   },
   { "id": "kbclock",
-    "name": "Digital Clock",
+    "name": "KB Digital Clock",
     "icon": "kbclock.png",
     "version": "0.01",
-    "description": "A Digital Clock",
+    "description": "Easy to read Digital Clock",
     "tags": "clock",
     "type":"clock",
     "allow_emulator":true,
