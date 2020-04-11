@@ -51,17 +51,17 @@ function drawSimpleClock() {
   // draw Day, name of month, Date
   var date = [da[0], da[1], da[2]].join(" ");
   g.setFont(font, dateFontSize);
-
   g.drawString(date, xyCenter, yposDate, true);
-  g.setFont(font, gmtFontSize);
-  g.drawString('Quarantine day 14', xyCenter, yposYear, true);
+  
+  //g.setFont(font, gmtFontSize);
+  //g.drawString('Quarantine day 14', xyCenter, yposYear, true);
   // draw year
   //g.setFont(font, dateFontSize);
   //g.drawString(d.getFullYear(), xyCenter, yposYear, true);
     // draw gmt
-  var gmt = da[5];
-  g.setFont(font, gmtFontSize);
-  g.drawString('Maria & Wiktor :) ', xyCenter+4, yposGMT, true);
+  //var gmt = da[5];
+  //g.setFont(font, gmtFontSize);
+  //g.drawString('Maria & Wiktor :) ', xyCenter+4, yposGMT, true);
 
 }
 function drawSimpleClockSeconds() {
