@@ -1158,19 +1158,5 @@
       {"name":"batchart.app.js","url":"app.js"},
       {"name":"batchart.img","url":"app-icon.js","evaluate":true}
     ]
-  },
-  { "id": "kbclock",
-    "name": "KB digital clock",
-    "shortName":"KBC1",
-    "icon": "kbclock.png",
-    "version":"0.01",
-    "description": "Easy to read digital clock with seconds",
-    "tags": "clock",
-    "type": "clock",
-    "allow_emulator":true,
-    "storage": [
-      {"name":"kbclock.app.js","url":"kbclock.js"},
-      {"name":"kbclock.img","url":"kbclock-icon.js","evaluate":true}
-    ]
   }
 ]
