@@ -88,7 +88,7 @@
       if (event.title)
         g.drawString(event.title.slice(0,17), x, y + 25);
 
-      g.setFont("6x8", 1);
+      g.setFont("6x8", 2);
       g.setColor("#ffffff");
       g.setFontAlign(-1, -1);
       g.drawString(txt.join("\n"), 10, y + 40);
@@ -112,7 +112,7 @@
         g.setColor("#ffffff");
         g.drawString(state.musicInfo.artist, x, y + 8);
 
-        g.setFont("6x8", 1);
+        g.setFont("6x8", 2);
         g.setColor("#ffffff");
         g.drawString(state.musicInfo.track, x, y + 22);
       }, changed);
@@ -136,7 +136,7 @@
         g.setColor("#ffffff");
         g.drawString(event.name, x, y + 8);
 
-        g.setFont("6x8", 1);
+        g.setFont("6x8", 2);
         g.setColor("#ffffff");
         g.drawString(event.number, x, y + 22);
       });
