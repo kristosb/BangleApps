@@ -9,6 +9,7 @@ const distanceUnits = { // how many meters per X?
 const speedUnits = { // how many kph per X?
     "kmh": 1,
     "kph": 1,
+    "km/h": 1,
     "mph": 1.60934
 };
 
@@ -129,9 +130,9 @@ var locales = {
         thousands_sep: ",",
         currency_symbol: "$",
         int_curr_symbol: "CAD",
-        speed: "mph",
-        distance: { 0: "mi", 1: "kmi" },
-        temperature: "°F",
+        speed: "km/h",
+        distance: { 0: "m", 1: "km" },
+        temperature: "°C",
         ampm: { 0: "am", 1: "pm" },
         timePattern: { 0: "%HH:%MM:%SS ", 1: "%HH:%MM" },
         datePattern: { 0: "%A, %B %d, %Y", "1": "%Y-%m-%d" }, //  Sunday, March 1, 2020  // 2012-12-20
@@ -220,7 +221,7 @@ var locales = {
         int_curr_symbol: "ILS",
         speed: "kmh",
         distance: { 0: "m", 1: "km" },
-        temperature: "°F",
+        temperature: "°C",
         ampm: { 0: "am", 1: "pm" },
         timePattern: { 0: "%HH:%MM:%SS ", 1: "%HH:%MM" },
         datePattern: { 0: "%A, %B %d, %Y", "1": "%d/%m/%Y" }, //  Sunday, 1 March 2020  // 01/03/2020
