@@ -210,7 +210,7 @@
   { "id": "kbclock",
     "name": "KB Digital Clock",
     "icon": "kbclock.png",
-    "version": "0.03",
+    "version": "0.04",
     "description": "Easy to read Digital Clock",
     "tags": "clock",
     "type":"clock",

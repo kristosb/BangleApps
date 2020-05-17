@@ -167,7 +167,7 @@ function drawEverythingElse() {
 function showTime() {
   if (animInterval) return; // in animation - quit
   var d = new Date();
-  var hours = 23;//d.getHours();
+  var hours = d.getHours();
   if (is12Hour) hours = ((hours + 11) % 12) + 1;
   var t = (" "+hours).substr(-2)+":"+
           ("0"+d.getMinutes()).substr(-2);
