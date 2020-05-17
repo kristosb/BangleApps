@@ -1,6 +1,6 @@
 var is12Hour = (require("Storage").readJSON("setting.json",1)||{})["12hour"];
 var locale = require("locale");
-var CHARW = 34; // how tall are digits?
+var CHARW = 30; // how tall are digits?
 var CHARP = 4; // how chunky are digits?
 var Y = 60; // start height
 // Offscreen buffer
@@ -116,7 +116,7 @@ function drawDigits(lastText,thisText,n) {
   "ram"
   const p = CHARP; // padding around digits
   const s = CHARW; // character size
-  var x = -20;  // x offset
+  var x = 3;  // x offset
   g.reset();
   for (var i=0;i<lastText.length;i++) {
     var lastCh = lastText[i];
@@ -148,7 +148,7 @@ function drawDigits(lastText,thisText,n) {
   }
 }
 function drawEverythingElse() {
-  var x = (CHARW + CHARP + 6)*5-22;
+  var x = (CHARW + CHARP + 6)*5;
   var y = Y + 2*CHARW + CHARP;
   var d = new Date();
   g.reset();
@@ -167,7 +167,7 @@ function drawEverythingElse() {
 function showTime() {
   if (animInterval) return; // in animation - quit
   var d = new Date();
-  var hours = d.getHours();
+  var hours = 23;//d.getHours();
   if (is12Hour) hours = ((hours + 11) % 12) + 1;
   var t = (" "+hours).substr(-2)+":"+
           ("0"+d.getMinutes()).substr(-2);
@@ -217,4 +217,4 @@ timeInterval = setInterval(showTime, 1000);
 showTime();
 
 // Show launcher when middle button pressed
-setWatch(Bangle.showLauncher, BTN2, {repeat:false,edge:"falling"});
+setWatch(Bangle.showLauncher, BTN3, {repeat:false,edge:"falling"});
