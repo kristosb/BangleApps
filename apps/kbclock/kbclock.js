@@ -160,7 +160,8 @@ function drawEverythingElse() {
   // date
   g.setFontAlign(0,-1);
   var date = locale.date(d,false);
-  g.drawString(date, g.getWidth()/2, y+8, true);
+  //g.drawString(date, g.getWidth()/2, y+8, true);
+  g.drawString(`${locale.dow(d,true)} ${d.getDate()} ${locale.month(d,true)}`, g.getWidth()/2, y+8, true);
 }
 
 /* Show the current time, and animate if needed */

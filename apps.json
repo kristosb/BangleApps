@@ -240,7 +240,7 @@
   { "id": "kbclock",
     "name": "KB Digital Clock",
     "icon": "kbclock.png",
-    "version": "0.04",
+    "version": "0.05",
     "description": "Easy to read Digital Clock",
     "tags": "clock",
     "type":"clock",
